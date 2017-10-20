@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bankAccount;
+
+/**
+ *
+ * @author Shaquina
+ */
+public class CheckAccount {
+    
+    
+   
+               
+               
+             public class CheckingAccount extends BankAccount {
+
+        private void dollarsToWords() {
+            throw new UnsupportedOperationException("Not supported yet."); 
+        }
+                 public BankAccount checking;
+                 
+                 public CheckingAccount (BankAccount Id, int balance) {
+    super (Id, balance); 
+                 }
+
+                     public void deposit (int amount)
+    {
+                        super.deposit(amount);
+                        
+                        public void withdraw (double amount) {
+                            if(amount<= balance) {
+                                balance = balance - amount;
+                            }
+                            
+                            else {
+                                System.err.println("Insufficient funds");
+                            }}}
+                            public double getBalance() {
+                                return balance;
+                            }
+                        }
+
+ public String writeCheck(double amount) {
+                     CheckingAccount.dollarsToWords(); 
+                     return null;
+                     
+                 }
+                       CheckingAccount.dollarsToWords();
+                       
+    if("withdraw amount > Balance") {
+
+                 System.out.println("Insufficient funds.");
+                        }
+                        else {
+                         balance -=amount;
+                         }
+        System.out.println("There are insufficient funds.");
+        
+
+}
+
+    
+                
+                 

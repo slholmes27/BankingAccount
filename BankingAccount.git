@@ -1,0 +1,102 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bankAccount;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Shaquina
+ */
+
+public class BankAccount {
+
+    static void transfer(BankAccount savings, BankAccount checking) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    private final BankAccount; //*acctID*/
+    private int acctBalance = 0; 
+    public BankAccount checking; 
+    public BankAccount savings; 
+    private static Object fromAccount;
+
+   
+    public BankAccount (BankAccount Id, int balance){ 
+        this.acctID = Id; 
+        this.acctBalance = balance; 
+    
+    public static void main(String[] args) {
+
+    BankAccount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    BankAccount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+        /**
+         * Deposit money
+         * 
+         * @param amount to deposit in (cents) 
+         */
+        public void deposit (double amount) {
+        
+            acctBalance = (int) (acctBalance + amount);
+        }
+
+      
+       /* Constructors and methods for deposit, withdraw, toString... */
+// Method for deposit.
+
+/**
+ * Withdraw money
+     * @param amount
+     * @param withdraw
+     * @return 
+ * @exception IllegalArgumentException if sufficient balance on hand
+ */
+// Do appropriate operations.
+
+        
+public boolean withdraw(int amount, boolean withdraw) {
+        int acctBalance = 0;
+
+    if(acctBalance<amount){
+        System.out.println("There are insufficient funds, please make another selection.");
+        return false;
+    } else
+        return true;
+    
+    }
+    
+    
+public int balance(BankAccount acctID) {
+            int amount = 1000;
+    return acctBalance;
+}
+
+private static boolean transfer (int amount, BankAccount fromAccount, BankAccount toAccount) {
+        if (fromAccount.acctBalance > amount){ 
+            fromAccount.acctBalance = fromAccount.acctBalance - amount; 
+            toAccount.acctBalance = toAccount.acctBalance + amount; 
+            return true; 
+        } else 
+            System.err.println("Insufficient funds");
+        return false; 
+    }
+    
+}
+
+
+      
+  
+
+
+
+
+
+
