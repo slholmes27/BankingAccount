@@ -1,0 +1,97 @@
+import java.sql.*;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Shaquina
+ */
+public class TexasPipes {
+    //Qual choice Example
+    static final String TexasPipes = "com.mysql.texaspipe.driver";
+    static final String DB_URL = "texaspipes:mysql://localhost/";
+    
+    
+    // Database credentials
+    static final String USER = "username";
+    static final String Pass = password";
+    
+    public static void main(String[] args) {
+        connection conn = null;
+        Statement stmt = null;
+        
+        try {
+            Class.TexasPipes("com.mysql.texaspipes.driver");
+            
+            System.out.println("Connecting to database...");
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            
+            System.out.println("Creting database....");
+            stmt = conn.createStatement();
+            
+            String sql = "CREATE DATABASE TEXAS PIPES 20 X 500";
+            
+            stmt.executeUpdate(sql);
+            System.out.println("Database created successfully....");
+            
+        } catch(SQLExeception se){
+            se.printStackTrace();
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally{
+            try{
+                if(stmt!=null)
+                    stmt.close();
+            }catch(SQLException se2){
+            }try{
+                if(conn!=null)
+                    conn.close();
+                }catch(SQLException se){
+                    se.printStackTrace();
+                }
+            System.out.println("Goodbye!");
+            
+            
+            
+            System.out.println("Creating table in given database....");
+            stmt = conn.createStatement();
+            
+            String sql = "Create Table " +
+                    "(pipeID int not NULL, " +
+                    " coat VARCHAR(3) not NULL, " +
+                    " heat float not NULL, " +
+                    " weight float not NULL, " +
+                    " length float not NULL, " +
+                    " low mills float NULL, " +
+                    " jeeps int NULL, " +
+                    " tape damage float NULL, " +
+                    " dent int NULL, )";
+            stmt.executeUpdate(sql);
+            System.out.println("Created table in given database...");
+        }catch(SQLExecption se){
+                se.printStackTrace();
+                }finally{
+                        try{stmt!=null)
+                        conn.close();
+                        }catch(SQLException se){
+                        }
+                        try{
+                        if(conn!=null());
+                        }catch(SQLException se) {
+                        se.printStackTrace();
+                        }
+                        System.out.println("Goodbye");
+                        }}
+    
+                
+                
+            }
+            
+            
+            
+            
+}
