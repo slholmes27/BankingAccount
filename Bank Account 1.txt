@@ -1,0 +1,134 @@
+package bankAccount;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Shaquina
+ */
+public class Bank extends BankAccount {
+
+    private static void convertTodouble(double bDep) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    Bank newInstructions = new Bank();
+
+    public Bank(BankAccount Id, int balance) {
+        super(Id, balance);
+    }
+
+    private Bank() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+   
+    public static void main(String[] args ) {
+
+    /**
+     *
+     */
+    public void instructions() { 
+        System.out.println("Please select from the following menu");
+        System.out.print("1. Deposit");
+        System.out.print("2. Withdrawl \n");
+        System.out.print("3. Transfer");
+        System.out.print("4. Write a Check");
+        System.out.print("5. Exit \n");
+        Bank newMenu = new Bank();
+    }
+    
+    
+    public void menuinfo () {
+        Scanner scanInput = new Scanner (System.in);
+        int menu = scanInput.nextInt();
+        if (menu ==1){
+            System.out.println("Which account would you like to deposit to?");
+            Scanner scanAcctIn = new Scanner(System.in);
+            String acctIn = scanAcctIn.nextLine();
+            if ("Checking".equals(acctIn))
+            {
+                System.out.println ("How much would you like to deposit?");
+                Scanner scanIn = new Scanner (System.in);
+                String dep = scanIn.nextLine();
+                String adep = dep.replace("$", "");
+                double bDep = Double.parseDouble(adep);
+               
+            } else if ("saving".equals(acctIn))
+            }
+                System.out.println ("How much would you like to deposit?");
+                Scanner scanIn = new Scanner (System.in);
+                String dep = scanIn.nextLine();
+                String adep = dep.replace("$", "");
+                double bDep = Double.parseDouble(adep);
+                
+                
+    }
+    Scanner scanInput = new Scanner (System.in);
+    int menu = scanInput.nextInt();
+    if (menu ==2) {
+    
+    System.out.println("Which account would you like to withdraw from?");
+    Scanner scanAcctOut = new Scanner(System.in);
+    String acctOut = scanAcctOut.nextLine();
+if("checking".equals(acctOut))
+{
+System.out.println ("How much would you like to withdraw?");
+    Scanner scanOut = new Scanner (System.in);
+    String with = scanOut.nextLine();
+    String nWith = with.replace("$", "");
+    double aWith = Double.parseDouble(nWith);
+        checking.withdraw(amount);
+
+} else if ("Saving".equals(acctOut)) {
+System.out.println ("How much would you like to withdraw?");
+Scanner scanOut = new Scanner (System.in);
+String with = scanOut.nextLine(); 
+                    String nWith = with.replace("$", ""); 
+                    double aWith = Double.parseDouble(nWith); 
+                    
+}
+Scanner scanInput = new Scanner (System.in);
+    int menu = scanInput.nextInt();
+    if (menu ==3) {
+                System.out.println("What bank account would you like to transfer from?"); 
+                Scanner scanAcct1 = new Scanner (System.in); 
+                String transFrom = scanAcct1.nextLine(); 
+                if ("checking".equals(transFrom)){ 
+                    
+                    System.out.println("How much would you like to transfer?"); 
+                    Scanner scanAmt = new Scanner (System.in); 
+                    String transfer = scanAmt.nextLine(); 
+                
+                    String nTransfer = transfer.replace("$", ""); 
+                    double aTransfer = Double.parseDouble(nTransfer); 
+                    
+                } else if ("savings".equals(transFrom)){ 
+                    
+                    System.out.println("How much would you like to transfer?"); 
+                    Scanner scanAmt = new Scanner (System.in); 
+                    String transfer = scanAmt.nextLine(); 
+                
+                    String nTransfer = transfer.replace("$", ""); 
+                    double aTransfer = Double.parseDouble(nTransfer); 
+                    BankAccount.transfer(savings, checking); 
+
+} else if (menu == 4) { 
+                System.out.println("How much will the check be for?"); 
+                Scanner payThisMuch = new Scanner (System.in); 
+                String check = payThisMuch.nextLine(); 
+                
+                String nCheck = check.replace("$", ""); 
+                double checka = Double.parseDouble (nCheck); 
+                
+                
+            } else if (menu == 5) { 
+                System.out.println("Have a nice day."); 
+                System.exit(0); 
+                
+            } else { 
+System.out.println("Please enter a correct choice."); 
+                Bank newInstructions = new Bank();  
+                newInstructions.instructions();
+            }
+}
+    
+}}
